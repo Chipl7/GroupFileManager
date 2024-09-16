@@ -15,8 +15,8 @@ public class FileGrouper {
             Iterator<String> iter = Arrays.asList(args).iterator();
             String fileName = skipFlagsAndGetFirstFileName(iter, flags);
             if (fileName == null) {
-                System.out.println("Empty file`s list");
-                return;
+                System.out.println("В аргументах нет названия файла");
+                return
             }
             readAndGroupFile(fileName, flags);
             while (iter.hasNext()) {
