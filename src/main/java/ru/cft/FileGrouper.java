@@ -43,23 +43,17 @@ public class FileGrouper {
             if(longStrategy != null) {
                 longStrategy.finish();
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        } catch (IOException e) {}
         try {
             if(floatStrategy != null) {
                 floatStrategy.finish();
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        } catch (IOException e) {}
         try {
             if(stringStrategy != null) {
                 stringStrategy.finish();
             }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        } catch (IOException e) {}
     }
 
     private void readAndGroupFile(String fileName, Flags flags) {
