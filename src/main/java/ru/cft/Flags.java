@@ -1,3 +1,5 @@
+package ru.cft;
+
 import java.io.File;
 
 public class Flags {
